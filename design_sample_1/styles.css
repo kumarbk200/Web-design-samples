@@ -1,0 +1,528 @@
+html{
+    scroll-behavior: smooth;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+
+li{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.row{
+    width: 100% !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------------  NAVBAR  ---------------------- */
+.fullnav{
+    z-index: 16;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background: #B80D15 ;
+    box-sizing: border-box!important;
+}
+#ubisoft{
+    height:50px;
+    object-fit: none;
+    overflow: hidden;
+    padding-top:10px;
+    filter: saturate(0) brightness(100%) invert(100%);
+}
+.logo{
+    font-size: 1.5rem;
+}
+
+.navigate{
+    color:white!important;
+    font-size: 1.2rem;
+    z-index: 5;
+    text-align: center;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+.adding-space{
+    height:80px;
+    width: 100%;
+}
+
+.divide{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,white,transparent);
+    display: block;
+}
+
+/* -----------------------  FIRST SECTION CAROUSEL  ---------------------- */
+.carous{
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-caption{
+    top:700px;
+    left:0;
+    right:0;
+   
+
+}
+.r-shape{
+    height: 40vh;
+    background-color: #B80D15  ;
+    clip-path: polygon(40% 40%, 100% 0%, 100% 150%, 30% 100%);
+}
+
+.next-prev{
+    top: 80px;
+    height: 100vh;
+}
+
+h4{
+    margin-top: 100px; 
+    padding: 10px;
+    padding-left:650px;
+    color: white;
+    font-size: 3rem;
+    font-family: "Consolas";
+    text-decoration: none;
+
+}
+.carousel-para{
+    margin-top:20px;
+    color: white;
+    font-size: 1rem;
+    padding-left:650px;
+    text-decoration: none;
+}
+
+#d_onhover{
+    position: absolute;
+}
+
+.img_darken{
+    transition:0.5s;
+    filter: brightness(80%);
+}
+
+/* -----------------------  SECOND SECTION  ---------------------- */
+
+.second-section{
+    width: 100%;
+    height:100vh;
+    background: lightgrey;
+    position: relative;
+}
+.intro{
+    padding-top: 100px;
+}
+
+ .intro h1{
+     font-size: 3rem;
+    padding: 20px 30px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro p{
+    font-size: 1.2rem;
+    padding: 0px 30px;
+}
+
+/* .intro-para1{
+    z-index: 8;
+    width: 60%;
+    font-size: 1.2rem;
+    padding-left: 30px;
+} 
+.intro-para2{
+    z-index: 8;
+    width: 60%;
+    margin-top: 150px;
+    padding-right: 30px;
+    font-size: 1.2rem;
+    
+    
+} */
+
+/* .red-shape{
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+
+    background: #B80D15 ;
+    height: 100vh;
+    clip-path: polygon(69% 54%, 100% 0, 49% 56%, 14% 66%, 78% 100%, 18% 84%, 0 53%);
+    z-index: 5;
+} */
+
+/* -----------------------  THIRD SECTION  ---------------------- */
+
+.third-section{
+    width: 100%;
+    background: rgb(11, 40, 73);
+    color: white;
+    height: 100vh;
+    
+}
+
+.img-div{
+    /* padding-left:30px; */
+    height: 100vh;
+    padding-left: 30px;
+    /*---------------for centering-------------*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ass-pic-container{
+    
+    position: relative;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 2%;
+    z-index: 0;
+    
+}
+
+
+
+.ass-pic{
+    width:100%;
+    z-index: 0;
+   
+}
+
+.ass-pic-container:hover{
+    outline: 3px solid white;
+    outline-offset: -10px;
+    transition: all 0.6s ease;
+    z-index: 2;
+    transform: scale(1.04);
+}
+
+.ass-pic-container::before{
+    content: "";
+    bottom: -20px;
+    right: -20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    outline: 4px solid white;
+    outline-offset: -5px;    
+    transition: all 0.6s ease;
+}
+
+.ass-pic-container:hover::before{
+    bottom: 0;
+    right: 0;
+    outline-offset: 0;
+    padding-left: 10px;
+}
+.about-third-sec{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.third-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 30px;
+}
+
+.third-para{
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.third-button{
+    position: relative;
+    color: white;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    margin-left: 0;
+    font-size: 1.2rem;
+    overflow: hidden;
+    z-index: 2;
+    /* margin-left: 43%; */
+}
+
+.third-button::before{
+    content: "";
+    width: 10%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: 20px;
+    bottom: 0;
+    transition: all 0.6s ease;
+   
+}
+.third-button:hover::before{
+    width:75%;
+}
+
+/*---------------------  ACTION SECTION ---------------*/
+.action-section{
+    width: 100%;
+    height:100vh;
+    background: lightgrey;
+    text-align: center;
+}
+.action-inner h1{
+    padding-bottom: 0;
+    font-size: 3.5rem;
+}
+
+.action-inner p{
+    font-size: 1.2rem;
+}
+
+.action-inner{
+    padding-top: 80px;
+}
+
+.buy-button{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding:10px 30px;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    outline: 1px solid rgb(196, 192, 192);
+    outline-offset: -2px;
+}
+
+.buy-button:hover{
+    background: #B80D15;
+    color: lightgrey;
+    text-decoration: none;
+    box-shadow: 0 0 5px black;
+    z-index: 5;
+}
+
+.buy-button span{
+    position: absolute;
+    display: block;
+}
+
+.buy-button span:nth-child(1)
+{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg,transparent,#B80D15);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left:100%;
+    }
+}
+
+.buy-button span:nth-child(2)
+{
+    top:-100%;
+    right:0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#B80D15);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top:100%;
+    }
+}
+
+.buy-button span:nth-child(3)
+{
+    bottom:0;
+    right:-100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg,transparent,#B80D15);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right:100%;
+    }
+}
+
+.buy-button span:nth-child(4)
+{
+    bottom:-100%;
+    left:0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#B80D15);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom:100%;
+    }
+}
+
+.footer-base{
+    padding-top: 30px;
+    padding-bottom:20px;
+    background: #B80D15;
+    margin-top: 100px;
+}
+.footer-container{
+    color: white;
+
+}
+
+.footer-col{
+    justify-content: center;
+}
+.footer-col h4{
+    text-transform: uppercase;
+    padding: 0!important;
+    font-size: 1.5rem;
+    margin-top: 30px!important;
+}
+
+
+/*--------------- FOURTH SECTION ------------------*/
+/* .fourth-section{
+    height: 650px;
+    width: 100%;
+    background: #B80D15;
+} */
+
+
+
+
+/*-------------------------------- MEDIA QUERIES ------------------*/
+@media (max-width:768px){
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .carous, .second-section, .third-section, .img-div , .about-third-sec, .red-shape, .action-section,.next-prev{
+        height:auto;
+    }
+
+    .carousel-item img{
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .second-section{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .second-section h1{
+        padding-bottom: 10px;
+    }
+
+    .intro{
+        padding-top: 60px;
+    }
+    .intro-para1, .intro-para2{
+        text-align: left;
+        padding: 20px;
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .third-title{
+        margin-top: 0;
+    }
+
+    .img-div{
+        padding-top: 40px;
+    }
+
+    .third-button{
+    margin-bottom: 50px;
+    margin-left: 30%;
+    }
+
+    .about-third-sec{
+        padding-left: 33px;
+    }
+
+    .action-inner{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+
+    .footer-col ul {
+       padding-left: 0;
+        text-align: center;
+    }
+}
